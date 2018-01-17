@@ -1,0 +1,30 @@
+/*Dodaje zapas miejsca nad body. Potrzebne przy navbar-fixed-top.*/
+body{
+    padding-top: 80px;
+}
+
+/*Dodaje wyśrodkowanie obrazów w widoku xs.*/
+.img-responsive {
+    margin: 0 auto;
+}
+
+/*Dodaje zapas miejsca pod każdym img, aby nie były zlane jeden pod drugim.*/
+img{
+    padding-bottom: 10px;
+}
+
+/*Dodaje niewidzialny element przed każdym id. Potrzebne przy navbar-fixed-top, aby nie zasłaniać contentu przy przechodzeniu między odnośnikami.*/
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -80px;
+    height: 80px;
+    visibility: hidden;
+}
+
+/*Zwiększa rozmiar czcionki dla wszystkich elementów h2 na ekranach o większej rozdzielczości niż zdefiniowana.*/
+@media screen and (min-width: 768px) {
+    h2{
+        font-size:38px;
+    }
+}
