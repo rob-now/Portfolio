@@ -27,6 +27,11 @@ h3 {
     margin: 20px 0 15px 0;
 }
 
+.hero {
+    width: 100%;
+    padding: 0;
+}
+
 /*Header in hero section*/
 .header-featured-text {
     font-size: 1.5rem;
@@ -49,13 +54,14 @@ h3 {
     font-weight: bold;
 }
 
-/*Boxes in "My projects" section*/
+/*"My projects" section*/
 .my-projects__box {
     display: flex;
     flex-direction: column;
-    max-width: 555px;
+    /*max-width: 555px;*/
     /*width: 100%;*/
-    max-height: 500px;
+    height: 565px;
+    max-height: 565px;
     margin: 30px auto 0 auto;
     padding: 30px;
     background: #fff;
@@ -64,23 +70,13 @@ h3 {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
-/*.my-experience__box__screen {
-    max-height: 75%;
-    margin-bottom: 15px;
-}*/
-/*
-.my-projects__box__description {
-    padding-top: 15px;
-}*/
-
-.my-experience__box__head-item {
-    /*display: block;*/
+.my-projects_box__screen {
+    margin: 0 auto;
 }
 
-.item-right {
-    /*position: relative;
-    top: -30px;
-    text-align: right;*/
+/*"My experience" section*/
+.my-experience__box__head-item {
+    /*display: block;*/
 }
 
 .my-experience__box {
@@ -103,7 +99,7 @@ h3 {
 }
 
 .my-experience__box__description {
-    padding: 15px 0 15px 40px;
+    padding: 15px 15px 15px 40px;
     margin: 0 auto;
     max-width: 80%;
 }
@@ -116,12 +112,15 @@ h3 {
 
 
 @media screen and (max-width: 650px) {
+    /*Experience dates moves under "Position name" on xs devices*/
     .my-experience__box__head {
         max-height: 100%;
     }
 }
 
 @media screen and (max-width: 991px) {
+    /*Expanding max-width of experience description on xs devices*/
+
     .my-experience__box__description {
         max-width: 100%;
     }
