@@ -1,3 +1,2 @@
-# Portfolio-page
+# Portfolio
 
-Just a template project with navbar.
