@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5 {
     padding: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 h2 {
     margin: 60px 0 30px 0;
 }
@@ -67,6 +72,65 @@ h3 {
 .my-projects__box__description {
     padding-top: 15px;
 }*/
+
+.my-experience__box__head-item {
+    /*display: block;*/
+}
+
+.item-right {
+    /*position: relative;
+    top: -30px;
+    text-align: right;*/
+}
+
+.my-experience__box {
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    margin-bottom: 30px;
+}
+
+.my-experience__box__head {
+    max-height: 124px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    /*border: 1px solid rgba(200, 200, 200, 0.5);*/
+    background: #EEF0F2;
+}
+
+.my-experience__box__head-item {
+    padding: 0 10px 0 10px;
+}
+
+.my-experience__box__description {
+    padding: 15px 0 15px 40px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/*Deleting unnecessary margin from last "experience box*/
+#my-experience .row > .my-experience__col:last-child >.my-experience__box {
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .my-experience__box__head {
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .my-experience__box__description {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
 
 /*
 !*Dodaje zapas miejsca nad body. Potrzebne przy navbar-fixed-top.*!
