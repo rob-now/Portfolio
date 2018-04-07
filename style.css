@@ -1,19 +1,37 @@
-/*Dodaje zapas miejsca nad body. Potrzebne przy navbar-fixed-top.*/
+html {
+    font-size: 16px;
+}
+
+/*Header in hero section*/
+.header-featured-text {
+    font-size: 2rem;
+}
+
+.exp-items {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+
+
+/*
+!*Dodaje zapas miejsca nad body. Potrzebne przy navbar-fixed-top.*!
 body{
     padding-top: 80px;
 }
 
-/*Dodaje wyśrodkowanie obrazów w widoku xs.*/
+!*Dodaje wyśrodkowanie obrazów w widoku xs.*!
 .img-responsive {
     margin: 0 auto;
 }
 
-/*Dodaje zapas miejsca pod każdym img, aby nie były zlane jeden pod drugim.*/
+!*Dodaje zapas miejsca pod każdym img, aby nie były zlane jeden pod drugim.*!
 img{
     padding-bottom: 10px;
 }
 
-/*Dodaje niewidzialny element przed każdym id. Potrzebne przy navbar-fixed-top, aby nie zasłaniać contentu przy przechodzeniu między odnośnikami.*/
+!*Dodaje niewidzialny element przed każdym id. Potrzebne przy navbar-fixed-top, aby nie zasłaniać contentu przy przechodzeniu między odnośnikami.*!
 *[id]:before {
     display: block;
     content: " ";
@@ -22,9 +40,10 @@ img{
     visibility: hidden;
 }
 
-/*Zwiększa rozmiar czcionki dla wszystkich elementów h2 na ekranach o większej rozdzielczości niż zdefiniowana.*/
+!*Zwiększa rozmiar czcionki dla wszystkich elementów h2 na ekranach o większej rozdzielczości niż zdefiniowana.*!
 @media screen and (min-width: 768px) {
     h2{
         font-size:38px;
     }
 }
+*/
