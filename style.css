@@ -5,10 +5,10 @@ html {
 body {
     font-size: 16px;
     font-family: Merriweather, serif;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
-h1, h2, h3, h4, h5, .footer__form {
+h1, h2, h3, h4, h5, .footer__form, .footer__copyright {
     font-family: Lato, sans-serif;
     margin: 0;
     padding: 0;
@@ -133,11 +133,6 @@ textarea {
     max-width: 80%;
 }
 
-/*Deleting unnecessary margin from last "experience box*/
-/*#my-experience .row > .my-experience__col:last-child > .my-experience__box {
-    margin: 0;
-}*/
-
 /*"About me" section*/
 .about-me__box {
     margin-bottom: 30px;
@@ -175,6 +170,16 @@ textarea {
     background: #c94727;
 }
 
+.footer__copyright {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.footer__copyright__caption {
+    position: relative;
+    top: -1px;
+}
+
 @media screen and (max-width: 650px) {
     /*Experience dates moves under "Position name" on xs devices*/
     .my-experience__box__head {
@@ -188,6 +193,7 @@ textarea {
 
     .skills-logo {
         margin: 0 auto 30px auto;
+        max-height: 180px;
     }
 }
 
