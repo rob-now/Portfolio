@@ -122,8 +122,7 @@ textarea {
 .my-projects__box {
     display: flex;
     flex-direction: column;
-    height: 565px;
-    max-height: 565px;
+    height: 500px;
     margin: 0 auto 30px auto;
     padding: 30px;
     background: #fff;
@@ -217,6 +216,10 @@ textarea {
 
 @media screen and (max-width: 650px) {
     /*Experience dates move under "Position name" on xs devices*/
+    .header-featured-text {
+        margin: 20px auto 0 auto;
+    }
+
     .my-experience__box__head {
         max-height: 100%;
     }
@@ -242,5 +245,9 @@ textarea {
     .width-100 {
         width: 100%;
         padding: 0 30px;
+    }
+
+    .my-projects__box {
+        height: 100%;
     }
 }
