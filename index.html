@@ -1,106 +1,329 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+    <title>Robert Nowakowski - portfolio page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Home</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+<nav id="my-nav" class="navbar navbar-inverse navbar-fixed-top my-navbar dark-background">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed my-navbar__toggle"
+                data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand my-navbar__brand" href="#">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right my-navbar__list">
+            <li><a href="#my-experience">Experience</a></li>
+            <li><a href="#my-projects">Projects</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
     </div>
 </nav>
 
+<header>
+    <div class="container hero">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+            </ol>
 
-<div class="container" id="about">
-    <div class="row">
-        <div class="col-xs-1"></div>
-        <div class="col-xs-10">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <hr>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/photo-1.png" alt="Project title">
+                    <div class="carousel-caption">
+                        <h3 class="header-featured-text text-bold">Project title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/photo-2.png" alt="Project title">
+                    <div class="carousel-caption">
+                        <h3 class="header-featured-text text-bold">Project title</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/photo-3.png" alt="Project title">
+                    <div class="carousel-caption">
+                        <h3 class="header-featured-text text-bold">Project title</h3>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="text-center" id="portfolio">PORTFOLIO</h2>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-6"><img src="http://via.placeholder.com/450x300" class="img-responsive"
-                                                   alt="placeholder image"></div>
-                        <div class="col-sm-6"><img src="http://via.placeholder.com/450x300" class="img-responsive"
-                                                   alt="placeholder image"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6"><img src="http://via.placeholder.com/450x300" class="img-responsive"
-                                                   alt="placeholder image"></div>
-                        <div class="col-sm-6"><img src="http://via.placeholder.com/450x300" class="img-responsive"
-                                                   alt="placeholder image"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6"><img src="http://via.placeholder.com/450x300" class="img-responsive"
-                                                   alt="placeholder image"></div>
-                        <div class="col-sm-6"><img src="http://via.placeholder.com/450x300" class="img-responsive"
-                                                   alt="placeholder image"></div>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <h2 class="text-center" id="contact">CONTACT ME</h2>
-                <br>
-                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                    <form>
-                        <div class="form-group">
-                            <input type="name" class="form-control input-lg" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control input-lg" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control input-lg" placeholder="Message" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">Send</button>
-                    </form>
-                    <br>
-                </div>
-            </div>
-            <br>
+
+            <!-- Controls -->
+            <!--<a class="left carousel-control" href="#header-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#header-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>-->
         </div>
-        <div class="col-xs-1"></div>
     </div>
-</div>
-<footer class="footer">
+</header>
+
+<section id="my-experience">
+    <div class="container width-100">
+        <h2 class="title text-center">Professional experience</h2>
+        <div class="row">
+            <div class="col-xs-12 my-experience__col">
+                <div class="my-experience__box">
+                    <div class="my-experience__box__head">
+                        <h3 class="my-experience__box__head-item">InfoShare Academy</h3>
+                        <h3 class="my-experience__box__head-item text-bold">Junior Front-end Developer (bootcamp)</h3>
+                        <h3 class="my-experience__box__head-item">2018 - now</h3>
+                    </div>
+                    <div class="my-experience__box__description">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum! lorem
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 my-experience__col">
+                <div class="my-experience__box">
+                    <div class="my-experience__box__head">
+                        <h3 class="my-experience__box__head-item">Company name</h3>
+                        <h3 class="my-experience__box__head-item text-bold">Position name</h3>
+                        <h3 class="my-experience__box__head-item">2016 - 2017</h3>
+                    </div>
+                    <div class="my-experience__box__description">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 my-experience__col">
+                <div class="my-experience__box">
+                    <div class="my-experience__box__head">
+                        <h3 class="my-experience__box__head-item">Company name</h3>
+                        <h3 class="my-experience__box__head-item text-bold">Position name</h3>
+                        <h3 class="my-experience__box__head-item">2015 - 2016</h3>
+                    </div>
+                    <div class="my-experience__box__description">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores earum, expedita in
+                                ipsa
+                                minima nisi numquam reiciendis saepe sed similique? Alias autem commodi eligendi iste
+                                itaque, libero rem rerum voluptatum!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+<section id="my-projects">
+
     <div class="container">
-        <p class="text-center"><a href="#"><i class="fa fa-linkedin-square" style="font-size: 24px"></i></a></p>
-        <p class="text-center">Robert <span class="glyphicon glyphicon-copyright-mark"></span> 2018 | All rights
-            reserved</p>
+        <h2 class="title text-center">Projects</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="my-projects__box box-shadow">
+                    <div class="my-projects_box__screen">
+                        <img src="http://placehold.it/700x400" alt="project 1" class="img-responsive">
+                    </div>
+                    <div class="my-projects__box__description text-center">
+                        <h3 class="text-center text-bold">Project title</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita maiores nesciunt quisquam repellendus repudiandae soluta.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="my-projects__box box-shadow">
+                    <div class="my-projects_box__screen">
+                        <img src="http://placehold.it/700x400" alt="project 1" class="img-responsive">
+                    </div>
+                    <div class="my-projects__box__description text-center">
+                        <h3 class="text-center text-bold">Project title</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita maiores nesciunt quisquam repellendus repudiandae soluta. Consectetur, cumque, deleniti dolorem ea expedita illo nesciunt nisi officiis quam quas ullam vel!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="my-projects__box box-shadow">
+                    <div class="my-projects_box__screen">
+                        <img src="http://placehold.it/700x400" alt="project 1" class="img-responsive">
+                    </div>
+                    <div class="my-projects__box__description text-center">
+                        <h3 class="text-center text-bold">Project title</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita maiores nesciunt quisquam repellendus repudiandae soluta. Consectetur, cumque, deleniti dolorem ea expedita illo nesciunt nisi officiis quam quas ullam vel!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="my-projects__box box-shadow">
+                    <div class="my-projects_box__screen">
+                        <img src="http://placehold.it/700x400" alt="project 1" class="img-responsive">
+                    </div>
+                    <div class="my-projects__box__description text-center">
+                        <h3 class="text-center text-bold">Project title</h3>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum expedita maiores nesciunt quisquam repellendus repudiandae soluta.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about-me">
+    <div class="container width-100">
+        <h2 class="title text-center">About me</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="about-me__box">
+                    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTUxNTExMzUzOF5BMl5BanBnXkFtZTgwOTI1MjA3OTE@._V1_UX172_CR0,0,172,256_AL_.jpg"
+                         alt="My photo" class="img-responsive about-me__box__photo box-shadow">
+                    <span class="about-me__box__description text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam amet atque autem culpa deserunt eos iusto labore minima neque nisi, quasi quibusdam quidem quo quod repudiandae sit ullam veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio eaque illo, ipsam officiis possimus recusandae soluta suscipit? Culpa cum cumque doloremque fugit, illo illum incidunt perspiciatis qui reprehenderit sapiente voluptate.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="my-skills">
+    <div class="container width-100">
+        <h2 class="title text-center">Skills</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="my-skills__box">
+                    <img src="img/HTML5_Logo.svg" alt="HTML5 logo" class="img-responsive skills-logo">
+                    <img src="img/CSS3_logo.svg" alt="CSS3 logo" class="img-responsive skills-logo">
+                    <img src="img/JavaScript_logo.svg" alt="JavaScript logo" class="img-responsive skills-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="dark-background">
+    <div class="container width-100">
+        <h2 class="title text-center text-white">Contact me</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+                <form class="footer__form">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" aria-label="First name"
+                               placeholder="First name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" aria-label="Last name" placeholder="Last name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" aria-label="E-mail address"
+                               placeholder="E-mail address">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control input-lg" aria-label="Message" placeholder="Message"
+                                  rows="5"></textarea>
+                    </div>
+
+                    <button type="button" class="form__btn-send">Send</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer__copyright text-white">
+                    <span class="glyphicon glyphicon-copyright-mark"></span>
+                    <span class="footer__copyright__caption">Robert Nowakowski 2018</span>
+                </div>
+
+            </div>
+        </div>
     </div>
 </footer>
 
+
+<!--Scripts-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+        integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

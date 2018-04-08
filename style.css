@@ -1,30 +1,246 @@
-/*Dodaje zapas miejsca nad body. Potrzebne przy navbar-fixed-top.*/
-body{
-    padding-top: 80px;
+html {
+    font-size: 16px;
 }
 
-/*Dodaje wyśrodkowanie obrazów w widoku xs.*/
-.img-responsive {
+body {
+    font-size: 16px;
+    font-family: Merriweather, serif;
+}
+
+h1, h2, h3, h4, h5, .footer__form, .footer__copyright {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 60px 0;
+}
+
+h3 {
+    margin: 20px 0 15px 0;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/*Class for main titles*/
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/*Class for centering the text*/
+.text-center {
+    text-align: center;
+}
+
+/*Class for bold text*/
+.text-bold {
+    font-weight: bold;
+}
+
+/*Class for white text*/
+.text-white {
+    color: #fff;
+}
+
+/*Class for box-shadow*/
+.box-shadow {
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*Class fo dark background*/
+.dark-background {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/*Navbar*/
+#my-nav a {
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    transition: all 0.4s;
+}
+
+#my-nav button {
+    transition: all 0.4s;
+}
+
+#my-nav a:hover, #my-nav button:hover {
+    background: #ee4b28;
+    transition: all 0.4s;
+}
+
+#my-nav a:active, #my-nav button:active {
+    background: #c94727;
+}
+
+.my-navbar__brand {
+    margin-left: 30px;
+}
+
+.my-navbar__list {
+    margin-right: 30px;
+    margin-left: 15px;
+}
+
+.my-navbar__toggle {
+    color: #fff;
+    margin: 0 30px 0 0;
+    padding: 14px 10px;
+    width: 50px;
+    border-radius: 0;
+    border: none;
+}
+
+/*Hero*/
+.hero {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+/*Header in hero section*/
+.header-featured-text {
+    font-size: 1.5rem;
+    width: 250px;
+    background: rgba(238, 75, 40, 0.7);
+    margin: 20px auto 15px auto;
+}
+
+/*"My projects" section*/
+.my-projects__box {
+    display: flex;
+    flex-direction: column;
+    height: 565px;
+    max-height: 565px;
+    margin: 0 auto 30px auto;
+    padding: 30px;
+    background: #fff;
+}
+
+.my-projects_box__screen {
     margin: 0 auto;
 }
 
-/*Dodaje zapas miejsca pod każdym img, aby nie były zlane jeden pod drugim.*/
-img{
-    padding-bottom: 10px;
+/*"My experience" section*/
+.my-experience__box {
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    margin-bottom: 30px;
 }
 
-/*Dodaje niewidzialny element przed każdym id. Potrzebne przy navbar-fixed-top, aby nie zasłaniać contentu przy przechodzeniu między odnośnikami.*/
-*[id]:before {
+.my-experience__box__head {
+    max-height: 124px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background: #EEF0F2;
+}
+
+.my-experience__box__head-item {
+    padding: 0 10px 0 10px;
+}
+
+.my-experience__box__description {
+    padding: 30px 30px 30px 40px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/*"About me" section*/
+.about-me__box {
+    margin-bottom: 30px;
+}
+
+.about-me__box__photo {
+    margin: 0 auto;
+}
+
+.about-me__box__description {
     display: block;
-    content: " ";
-    margin-top: -80px;
-    height: 80px;
-    visibility: hidden;
+    padding: 30px 30px 0 30px;
+    margin: 0 auto;
+    max-width: 80%;
 }
 
-/*Zwiększa rozmiar czcionki dla wszystkich elementów h2 na ekranach o większej rozdzielczości niż zdefiniowana.*/
-@media screen and (min-width: 768px) {
-    h2{
-        font-size:38px;
+/*"My skills" section*/
+.my-skills__box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.skills-logo {
+    max-height: 120px;
+}
+
+/*Footer section*/
+.form__btn-send {
+    display: block;
+    font-size: 22px;
+    width: 150px;
+    padding: 10px 0;
+    margin: 0 0 30px auto;
+    text-transform: uppercase;
+    text-align: center;
+    background: #EE4B28;
+    color: #fff;
+    border: none;
+    transition: all 0.4s;
+}
+
+.form__btn-send:hover {
+    transition: all 0.4s;
+    background: #c94727;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.footer__copyright__caption {
+    position: relative;
+    top: -1px;
+}
+
+@media screen and (max-width: 650px) {
+    /*Experience dates move under "Position name" on xs devices*/
+    .my-experience__box__head {
+        max-height: 100%;
+    }
+
+    .my-skills__box {
+        display: block;
+
+    }
+
+    .skills-logo {
+        margin: 0 auto 30px auto;
+        max-height: 180px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /*Expanding max-width of experience description on xs devices*/
+    .my-experience__box__description,
+    .about-me__box__description {
+        max-width: 100%;
+    }
+
+    .width-100 {
+        width: 100%;
+        padding: 0 30px;
     }
 }
